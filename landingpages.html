@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+ <head>
+
+    <style>
+        *{
+            margin: 0;
+            Padding:0;
+        }
+        div#container{
+            width:1250px;
+                height:4000px;
+                border-width: 2px;
+                border-color: black;
+                border-style: solid;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+        }
+        header{
+                width:1250px;
+                height:120px;
+                /* background-color: lightgreen; */
+                display:flex;
+                flex-direction: row;
+                justify-content:space-between;
+                align-items:center;
+                padding: 0 15px;
+                box-sizing: border-box;
+              
+        }
+        div#logo{              
+              display:flex;
+            flex-direction: row;
+             justify-content:space-evenly;
+             align-items:center;
+
+        }
+        ul#menu{ 
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items:center;
+          
+
+        }
+        ul#menu li{
+            margin:0 20px
+        }
+        ul{
+            list-style-type: none;
+        }
+        h1#icon{
+            background-color:rgb(0, 172, 238);
+            color: white;
+            width:80px;
+                height:80px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+
+        }
+        div#section1{
+            
+            width:1250px;
+            height:650px;
+            /* background-color: lightcoral; */
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items:center;
+            padding: 0 15px;
+             box-sizing: border-box;
+        }   
+        div#section1-1{
+            width: 625px;
+            height:650px;
+            /* background-color: lightseagreen; */
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:flex-start;
+            padding-left: 15px;
+            padding-right: 50px;
+            
+
+             box-sizing: border-box;
+
+        } 
+        div#section1-2{
+
+            background-color:rgb(0, 172, 238);
+            color: white;
+            width:120px;
+                height:60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+        }
+        div#section1image{
+            width: 870px;
+            height:600px;
+           /* background-color: lightpink;*/
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:flex-end;
+            margin: 0 10px;
+            
+
+             box-sizing: border-box;
+             background-image: url("images/illustration.png");
+        }
+        div#section2{
+            width:1250px;
+            height:200px;
+            /* background-color: lightcoral;  */
+            display:flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:center;
+            padding: 0 15px;
+             box-sizing: border-box;
+             text-align: center;
+
+        }
+        .section2line{
+            width:50px;
+            height:5px;
+            background-color: black;
+        }
+        .gray{
+            color: gray;
+        }
+        .section3{
+            width:1250px;
+            height:380px;
+            /* background-color: lightcoral;   */
+            display:flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items:center;
+            padding: 0 15px;
+             box-sizing: border-box;
+             text-align: center;
+
+        }
+        .section3-1{
+            width:300px;
+            height:270px;
+            background-color:white;  
+            display:flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:flex-start;
+            padding-left: 15px;
+            padding-right: 50px;
+             box-sizing: border-box;
+             border-radius: 12px;
+             text-align: left;
+             box-shadow: 13px 11px 23px 3px rgba(0,0,0,0.45);
+            -webkit-box-shadow: 13px 11px 23px 3px rgba(0,0,0,0.45);
+            -moz-box-shadow: 13px 11px 23px 3px rgba(0,0,0,0.45);
+             
+        }
+        .frame1{
+            width: 92px;
+            height: 90px;
+            background-image: url(images/Frame-1.png);
+        }
+        div#section4{
+            
+            width:1250px;
+            height:400px;
+             /* background-color: lightcoral;  */
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items:center;
+            padding: 0 15px;
+             box-sizing: border-box;
+        }   
+        div#section4-1{
+            width: 625px;
+            height:400px;
+            /* background-color: lightseagreen;  */
+            display:flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:flex-start;
+            padding-left: 15px;
+            padding-right: 50px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            
+
+             box-sizing: border-box;
+
+        } 
+        div#section4image{
+            width: 650px;
+            height:477px;
+           /* background-color: lightpink;*/
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:flex-end;
+            margin: 0 20px;
+            
+
+             box-sizing: border-box;
+             background-image: url("images/section-1.png");
+        }
+        div#section5{
+            
+            width:1250px;
+            height:400px;
+             /* background-color: lightcoral;  */
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items:center;
+            padding: 0 15px;
+             box-sizing: border-box;
+        }   
+        div#section5-1{
+            width: 625px;
+            height:400px;
+            /* background-color: lightseagreen;  */
+            display:flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:flex-start;
+            padding-left: 50px;
+            padding-right: 15px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            
+
+             box-sizing: border-box;
+
+        } 
+        div#section5image{
+            width: 665px;
+            height:434px;
+           /* background-color: lightpink;*/
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:flex-end;
+            margin: 0 20px;
+            
+
+             box-sizing: border-box;
+                background-image: url("images/section-2.png")
+            }
+            .space{
+                width:1250px;
+            height:150px;
+            }
+            div#section6{
+                width:1250px;
+            height:400px;
+              background-color: rgb(0, 172, 238);  
+            display:flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items:center;
+            padding: 0 15px;
+             box-sizing: border-box;
+             border-radius: 12px;
+
+            }
+            div#section6head{
+                width:1250px;
+            height:100px;
+              /* background-color: lightblue;   */
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items:center;
+            padding: 0 15px;
+            padding-top: 50px;
+            
+             box-sizing: border-box;
+             border-radius: 12px;
+            }
+            div#section6content{
+                width:1250px;
+            height:300px;
+              /* background-color: 00acee   */
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items:center;
+            padding: 0 15px;
+            
+             box-sizing: border-box;
+             border-radius: 12px;
+            }
+            div#section6content1{  width:625px;
+            height:300px;
+              /* background-color: lightgreen;   */
+            display:flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items:center;
+            padding: 0 15px;
+            
+             box-sizing: border-box;
+             border-radius: 12px;
+
+            }
+            div#section6image{
+                width: 133px;
+            height:133px;
+           /* background-color: lightpink;*/
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:flex-end;
+            margin: 0 20px;
+            
+            
+
+             box-sizing: border-box;
+                background-image: url("images/user.png")
+                
+            }
+            div#section6content2{  width:625px;
+            height:300px;
+              /* background-color: lightgoldenrodyellow;   */
+            display:flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items:center;
+            padding: 0 15px;
+            
+             box-sizing: border-box;
+             border-radius: 12px;
+            }
+
+    </style>
+ </head>
+ <body>
+     <div id="container">
+         <header>
+             <div id="logo">
+                 <h1 id="icon">T</h1> <br>
+            <h1>Trafalgar</h1>
+            </div>
+            <ul id="menu">
+                <li>Home</li>
+               
+                <li>Find a doctor</li>
+                
+                <li>Apps</li>
+                <li>Testimonials</li>
+                
+                <li>About us</li>
+            </ul>
+           
+
+         </header>
+         <section>
+            <div class="space"></div>
+             <div id="section1">
+                 <div id=section1-1>
+                     <h1 style="font-size: 50px;">Virtual health care for you</h1><br>
+                     <p class="gray">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p><br>
+                     <div id=section1-2><p>Consult today</p></div>
+                     
+                         
+                    </div>
+                    <div id="section1image"></div>
+             </div>
+             <div class="space"></div>
+             <div id="section2">
+                 <div>
+                     <h2>Our services</h2>
+
+                 </div>
+                 <div class="section2line"></div>
+                 <div>
+                     <p class="gray">We provide to you the best choices for you.Adjust it to your health needs and make sure your undergo treatment with our highly qualigied doctors you can consult with us which type of service is suitable for your health</p>
+                 </div>
+             </div>
+             <div class="space"></div>
+             <div class="section3">
+                 <div class="section3-1">
+                     <div class="frame1"></div>
+                     <div>
+                         <h2>Search doctor</h2>
+                         <br>
+                         <p class="gray">Choose your doctor from thousands of specialist,general and trusted hospital</p>
+                     </div>
+                 </div>
+                 <div class="section3-1">
+                    <div class="frame1"></div>
+                    <div>
+                        <h2>Search doctor</h2>
+                        <br>
+                        <p class="gray">Choose your doctor from thousands of specialist,general and trusted hospital</p>
+                    </div>
+                </div>
+                <div class="section3-1">
+                    <div class="frame1"> </div>
+                    <div>
+                        <h2>Search doctor</h2>
+                        <br>
+                        <p class="gray">Choose your doctor from thousands of specialist,general and trusted hospital</p>
+                    </div>
+                </div>
+             </div>
+             <div class="section3">
+                <div class="section3-1">
+                    <div class="frame1"></div>
+                    <div>
+                        <h2>Search doctor</h2>
+                        <br>
+                        <p class="gray">Choose your doctor from thousands of specialist,general and trusted hospital</p>
+                    </div>
+                </div>
+                <div class="section3-1">
+                   <div class="frame1"></div>
+                   <div>
+                       <h2>Search doctor</h2>
+                       <br>
+                       <p class="gray">Choose your doctor from thousands of specialist,general and trusted hospital</p>
+                   </div>
+               </div>
+               <div class="section3-1">
+                   <div class="frame1"> </div>
+                   <div>
+                       <h2>Search doctor</h2>
+                       <br>
+                       <p class="gray">Choose your doctor from thousands of specialist,general and trusted hospital</p>
+                   </div>
+               </div>
+            </div>
+            <div class="space"></div>
+            <div id="section4">
+                <div id="section4image"></div>
+
+                <div id=section4-1>
+                    <div>
+                     <h2>Leading healthcare provides</h2>
+                    </div>
+
+                 
+                     <div class="section2line"></div>
+                    <div>
+                     <p class="gray">Trafalgar provides progressive, and affordable healthcare,accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solution we deliver</p>
+                     </div>
+                    
+                    
+                        
+                </div>
+
+                   
+            </div>
+            <div class="space"></div>
+
+            <div id="section5">
+                
+
+                <div id=section5-1>
+                    <div>
+                     <h2>Downnload our mobile apps</h2>
+                    </div>
+
+                 
+                     <div class="section2line"></div>
+                    <div>
+                     <p class="gray">Our dedicated patient engagement app and web portal allow you to acces information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+                     </div>
+                    
+                    
+                        
+                </div>
+                <div id="section5image"></div>
+                   
+            </div>
+            <div class="space"></div>
+            <div id="section6">
+                <div id="section6head">
+                    <h2 style="color: white;">What our customer are saying</h2>
+                
+
+             
+                 <div class="section2line"></div>
+                </div>
+                <div id="section6content">
+                    <div id="section6content1">
+                        <div id="section6image"></div>
+                        <div id="section6content1-1">
+                            <h2 style="color: white;">Portgas D. Ace</h2>
+                            <p style="color: white;">Founder Circle</p>
+                        </div>
+                    
+                    </div>
+                    <div id="section6content2">
+                        <p style="color: white;">"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely"
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+         </section>
+
+     </div>
+ </body>
+ </html>
